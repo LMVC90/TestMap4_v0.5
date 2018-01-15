@@ -1,0 +1,32 @@
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ionic List Directive</title>
+   
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+  </head>
+
+  <body ng-app="starter">
+    
+   <ion-pane>
+    <ion-header-bar class="bar-stable">
+     <h1 class="title">Servicios</h1>
+    </ion-header-bar>
+       
+    <ion-content ng-controller="ListaCtrl">
+     <ion-list>
+  <ion-item ng-repeat="item in items" href="/#/map">
+    {{ item.titulo }}
+  </ion-item>
+</ion-list>
+
+
+    </ion-content>
+      
+   </ion-pane>
+      
+  </body>
+</html>
+

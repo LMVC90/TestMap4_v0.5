@@ -4,7 +4,7 @@
 
     function AppCtrl($scope, $state){
       
-
+    		//Menu
     }
 
 })();  

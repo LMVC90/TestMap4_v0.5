@@ -12,7 +12,7 @@ angular.module('starter.controllers', [])
     }
 
     $scope.loading = $ionicLoading.show({
-      content: 'Getting current location...',
+      content: 'Obteniendo tu Ubica...',
       showBackdrop: false
     });
 
@@ -25,22 +25,5 @@ angular.module('starter.controllers', [])
     });
   };
     
-    google.maps.event.addListenerOnce($scope.map, 'idle', function(){
-
-      
- 
-  var marker = new google.maps.Marker({
-      map: $scope.map,
-      animation: google.maps.Animation.DROP,
-      position: latLng
-  });     
-    var infoWindow = new google.maps.InfoWindow({
-      content: "Here I am!"
-  });
- 
-  google.maps.event.addListener(marker, 'click', function () {
-      infoWindow.open($scope.map, marker);
-  });   
- 
-});
+  
 });

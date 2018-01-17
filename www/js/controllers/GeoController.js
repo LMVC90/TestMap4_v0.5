@@ -7,6 +7,7 @@
     .then(function (position) {
       var lat  = position.coords.latitude
       var long = position.coords.longitude
+      
     }, function(err) {
       // error
     });
